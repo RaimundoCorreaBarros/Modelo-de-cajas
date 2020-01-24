@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 3</title>
+    <style>
+        .body {
+            width: 100%;
+        }
+
+        .flags {
+            width: 400px;
+            height: 200px;
+            margin: 20px;
+        }
+        .container {
+            float: left;
+            width: 600px;
+            box-sizing: border-box;
+        }
+        p {
+            display: inline-block;
+            padding-left: 25px;
+        }
+
+        /* ESPAÑA */
+        .espana {
+            display: grid;
+            grid-template-rows: 50px 100px 50px;
+        }
+        .espana__color1 {
+            grid-row: 1;
+            background-color: red;
+        }
+        .espana__color2 {
+            grid-row: 2;
+            background-color: rgb(211, 243, 67);
+        }
+        .espana__color3 {
+            grid-row: 3;
+            background-color: red;
+        }
+
+        /* DINAMARCA */
+        .dinamarca {
+            display: grid;
+            grid-template-columns: 100px 290px;
+            grid-template-rows: 95px 95px;
+            grid-gap: 10px;
+        }
+        .dinamarca__item {
+            background-color: red;
+        }
+        .dinamarca__color1 {
+            grid-column: 2;
+        }
+        .dinamarca__color2 {
+            grid-column: 2;
+        }
+        .dinamarca__color3 {
+            grid-row: 1;
+        }
+        .dinamarca__color4 {
+            grid-row: 2;
+        }
+
+        /* EMIRATOS ARABES */
+        .emiratos {
+            display: grid;
+            grid-template-columns: 100px 300px;
+        }
+        .emiratos__item1 {
+            grid-column: 1;
+            background-color: red;
+        }
+
+        .emiratos__item2 {
+            grid-column: 2;
+            display: grid;
+            grid-template-rows: 66.6px 66.6px 66.6px;
+        }
+
+        .emiratos__item21 {
+            grid-row: 1;
+            background-color: green;
+        }
+        .emiratos__item22 {
+            grid-row: 2;
+            background-color: white;
+        }
+        .emiratos__item23 {
+            grid-row: 3;
+            background-color: black;
+        }
+
+        /* JAPON */
+        .japon {
+            display: grid;
+            grid-template-columns: 160px 80px 160px;
+            background-color: white;
+            border: 1px solid black;
+        }
+        .japon_column1 {
+            grid-column: 1;
+        }
+        .japon_column3 {
+            grid-column: 3;
+        }
+        .japon__column2 {
+            grid-column: 2;
+            display: grid;
+        }   
+        .circulo {
+            grid-row: 2;
+        }
+        a {
+            display: inline-block;       
+            width: 80px;
+            height: 80px;
+            background-color: red;
+            border: 1px solid red;
+            border-radius: 50%;  
+            top: 50px;          
+        }
+    </style>
+</head>
+<body class="body">
+    <div class="container">
+        <div class="flags espana">
+            <div class="espana__color1"></div>
+            <div class="espana__color2"></div>
+            <div class="espana__color3"></div> 
+        </div>
+        <p>España</p>
+    </div>
+    
+    <div class="container">
+        <div class="flags dinamarca">
+            <div class="dinamarca__color1 dinamarca__item"></div>
+            <div class="dinamarca__color2 dinamarca__item"></div>
+            <div class="dinamarca__color3 dinamarca__item"></div>
+            <div class="dinamarca__color4 dinamarca__item"></div>            
+        </div>
+        <p>Dinamarca</p>
+    </div>
+    
+    <div class="container">
+        <div class="flags emiratos">
+            <div class="emiratos__item1"></div>
+            <div class="emiratos__item2">
+                <div class="emiratos__item21"></div>
+                <div class="emiratos__item22"></div>
+                <div class="emiratos__item23"></div>               
+            </div>            
+        </div>
+        <p>Emiratos Arabe</p>
+    </div>
+
+    <div class="container">
+        <div class=" flags japon">
+            <div class="japon__column1"></div>
+            <div class="japon__column2">
+                <div class="circulo">
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="japon__column3"></div>
+        </div>
+        <p>Japon</p>
+    </div>
+    
+    
+</body>
+</html>
